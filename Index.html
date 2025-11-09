@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobeauty - Cosmética Natural</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #556B3A;
+            --secondary-color: #556B3A;
+            --accent-color: #021d04;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--accent-color);
+        }
+
+        .navbar {
+            background-color: white !important;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .hero {
+            background-color: var(--secondary-color);
+            height: 70vh;
+            color: var(--accent-color);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .btn-eco-alt {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+            padding: 0.75rem 2rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn-eco-alt:hover {
+            background-color: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .product-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 300;
+        }
+
+        .footer {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-seedling text-success"></i> 
+                <span style="color: var(--accent-color);">Ecobeauty</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAlt">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAlt">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio" style="color: var(--accent-color);">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos" style="color: var(--accent-color);">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mision" style="color: var(--accent-color);">Nuestra Misión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" style="color: var(--accent-color);">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-start">
+                    <h1 class="display-4 fw-bold mb-3">La Naturaleza en tu Piel.</h1>
+                    <p class="lead mb-4">Fórmulas botánicas, éticas y efectivas para un bienestar integral.</p>
+                    <a href="#productos" class="btn btn-eco-alt btn-lg">Descubre la Colección</a>
+                </div>
+                <div class="col-md-5 d-none d-md-block">
+                    <img src="Productos.jpg" alt="Productos Naturales" class="img-fluid rounded-circle shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5" id="productos">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Esenciales de la Temporada</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card product-card h-100 text-center">
+                        <img src="Serum.jpg" class="card-img-top" alt="Sérum Facial">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sérum Revitalizante C</h5>
+                            <p class="card-text text-muted">Brillo y firmeza con Vitamina C natural.</p>
+                            <a href="detalles_serum.html" class="btn btn-sm btn-eco-alt d-block mt-3">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card product-card h-100 text-center">
+                        <img src="Aceite.jpg" class="card-img-top" alt="Aceite Natural">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Aceite Natural</h5>
+                            <p class="card-text text-muted">Desintoxica y equilibra tu piel.</p>
+                            <a href="detalles_aceite_natural.html" class="btn btn-sm btn-eco-alt d-block mt-3">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card product-card h-100 text-center">
+                        <img src="Balsamo.jpg" class="card-img-top" alt="Bálsamo Labial">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Bálsamo Labial de Karité</h5>
+                            <p class="card-text text-muted">Hidratación extrema para labios secos.</p>
+                            <a href="detalles_balsamo_labial.html" class="btn btn-sm btn-eco-alt d-block mt-3">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Ecobeauty. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
